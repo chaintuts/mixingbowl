@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- This file contains markup for the MixingBowl webpage
+-
+- Author: Josh McIntyre
+-->
+<html>
+
+<!-- Mark up meta information
+-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MixingBowl AES Decryption Demo</title>
+	
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	
+	<script src="mixingbowl.js" type="text/javascript"></script>
+	
+</head>
+
+<!--Mark up body -->
+<body>
+		
+		<h3>MixingBowl AES Decryption Demo</h3>
+
+		<div id="inputs">
+		
+			<label for="passphrase">Passphrase</label><br>
+			<input id="passphrase" type="text"></input><br>
+					  
+			<label for="salt">Salt</label><br>
+			<input id="salt" type="text"  size=30></input><br>
+					  
+			<label for="iv">IV</label><br>
+			<input id="iv" type="text"  size=30></input><br>
+			
+			<label for="ciphertext">Ciphertext</label><br>
+			<textarea id="ciphertext" rows=10 cols=50"></textarea><br>
+			
+			<button type="button" onclick="decrypt()">Decrypt</button><br>
+
+		</div>
+		
+		<div id="outputs">
+			<label for="plaintext">Plaintext</label><br>
+			<textarea id="plaintext" rows=10 cols=50></textarea>
+		</div>
+		
+</body>
+
+</html>
